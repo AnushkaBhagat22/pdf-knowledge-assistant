@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "type": "single_document",
+    "question": "How does an RNN use previous information to make predictions?",
+    "expected_sources": [
+      "RNN_LSTM.pdf"
+    ],
+    "why": "Tests basic retrieval of the RNN description."
+  },
+  {
+    "id": 2,
+    "type": "single_document",
+    "question": "What problems can occur during backpropagation through time in a standard RNN?",
+    "expected_sources": [
+      "RNN_LSTM.pdf"
+    ],
+    "why": "Tests retrieval of vanishing and exploding gradient information."
+  },
+  {
+    "id": 3,
+    "type": "single_document",
+    "question": "How is the repeating module of an LSTM different from that of a standard RNN?",
+    "expected_sources": [
+      "RNN_LSTM.pdf"
+    ],
+    "why": "Tests retrieval of the LSTM four-interacting-layer description."
+  },
+  {
+    "id": 4,
+    "type": "single_document",
+    "question": "How does LSTM handle long-term dependencies and temporal state information?",
+    "expected_sources": [
+      "RNN_LSTM.pdf",
+      "sample.pdf"
+    ],
+    "why": "Tests LSTM memory information across the two documents."
+  },
+  {
+    "id": 5,
+    "type": "single_document",
+    "question": "According to the documents, can LSTM extract features directly from raw data without preprocessing such as PCA or STFT?",
+    "expected_sources": [
+      "sample.pdf"
+    ],
+    "why": "Tests retrieval of the feature-extraction claim from the second PDF."
+  },
+  {
+    "id": 6,
+    "type": "single_document",
+    "question": "What example of distinguishing similar sequential activities is given for LSTM?",
+    "expected_sources": [
+      "sample.pdf"
+    ],
+    "why": "Tests retrieval of the temporal-state example."
+  },
+  {
+    "id": 7,
+    "type": "single_document",
+    "question": "What training-time limitation of LSTM is mentioned in the documents?",
+    "expected_sources": [
+      "sample.pdf"
+    ],
+    "why": "Tests retrieval of the comparison with HMM training time."
+  },
+  {
+    "id": 8,
+    "type": "single_document",
+    "question": "What accuracy information is reported for LSTM in the uploaded documents?",
+    "expected_sources": [
+      "sample.pdf"
+    ],
+    "why": "Tests retrieval of the reported performance information."
+  },
+  {
+    "id": 9,
+    "type": "cross_document",
+    "question": "Compare the main advantages and limitations of RNN and LSTM using both uploaded documents.",
+    "expected_sources": [
+      "RNN_LSTM.pdf",
+      "sample.pdf"
+    ],
+    "why": "Tests whether retrieval includes evidence from both documents."
+  },
+  {
+    "id": 10,
+    "type": "unanswerable",
+    "question": "What exact learning rate was used to train the RNN in the uploaded documents?",
+    "expected_sources": [],
+    "why": "Tests whether the assistant avoids inventing an unsupported detail."
+  }
+]
